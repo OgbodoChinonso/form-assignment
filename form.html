@@ -3,107 +3,35 @@
 <head>
   <meta charset="UTF-8">
    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>Pet Co</title>
+    <title>Pet Co. Adopt Your Favorite Animal</title>
+     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-  <form>
-    <h1> Want a pet? Get your dream pet from Pet Co</h1>
-    <p>Name</p>
-    <input type="text" required>
-    <select name="pets">
+  <div class="header">
+    <h2> Want a pet? Get your dream pet from Pet Co</h2>
+     <form>
+      <div class="details">
+      <div class="form-section">
+        <label for="name">Full Name</label>
+    <input type="text" id="name" for="name" placeholder="ogbodo paschal" required>
+      </div>
+      <div class="form-section">
+        <label for="pets">Choose your new pal</label>
+        <select id='pets' name="pets">
       <option value="dog">Puppy</option>
       <option value="cat">Kitten</option>
       <option value="bird">Parrot</option>
       <option value="reptil">Rock Pyton</option>
-      <textarea placeholder="why are you intrested in getting a pet?"></textarea>
-      <input type="buttom">
     </select>
-  </form>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adopt Your Favorite Animal</title>
-    <style>
-        /* General Page Styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
+      </div>
+      <div class="form-section">
+        <label for="form-survey">Why are you intrested in getting a pet?</label>
+         <textarea id="form-survey" name="form-survey" placeholder="Tell us about your home and why you'd like a new friend.."></textarea>
+      </div>
+      <button> Get your pet</button>
+  </div>
 
-        /* Form Container */
-        .adoption-form {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 400px;
-        }
-
-        h2 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-
-        /* Form Elements Grouping */
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: 600;
-            color: #555;
-        }
-
-        /* Input, Select, and Textarea Styling */
-        input[type="text"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            box-sizing: border-box; /* Ensures padding doesn't affect width */
-            font-size: 14px;
-        }
-
-        textarea {
-            resize: vertical;
-            height: 100px;
-        }
-
-        /* Submit Button Styling */
-        button {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="adoption-form">
+    <!-- <div class="adoption-form">
         <h2>Adopt Your Favorite Animal</h2>
         
         <form action="#">
@@ -118,7 +46,7 @@
                     <option value="dog">Dog 🐶</option>
                     <option value="cat">Cat 🐱</option>
                     <option value="rabbit">Rabbit 🐰</option>
-                    <option value="hamster">Hamster 🐹</option>
+                    <option value="hamster">Hamster </option>
                     <option value="parrot">Parrot 🦜</option>
                 </select>
             </div>
@@ -130,9 +58,7 @@
 
             <button type="submit">Complete Adoption</button>
         </form>
-    </div>
+    </div> -->
 
-</body>
-</html>
 </body>
 </html>
